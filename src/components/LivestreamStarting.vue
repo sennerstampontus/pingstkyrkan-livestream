@@ -6,7 +6,7 @@
           <h1 class="mb-5" :style="`color:${getTextColorQuery}`">
             {{ getTextQuery }}
           </h1>
-          <p :style="`color:${getTimeColorQuery}`">
+          <p v-if="getTimeQuery" :style="`color:${getTimeColorQuery}`">
             <b>{{ countdown }}</b>
           </p>
         </template>
@@ -17,7 +17,7 @@
         </template>
       </div>
 
-      <stream-loader></stream-loader>
+      <stream-loader :loader-width="getLoaderWidthQuery"></stream-loader>
     </div>
   </div>
 </template>
@@ -49,6 +49,9 @@ export default defineComponent({
     },
     getTimeColorQuery() {
       return this.$route.query['time-color'] as string;
+    },
+    getLoaderWidthQuery() {
+      return this.$route.query['loader-width'] as string;
     },
     isTimeExpired() {
       const queryTime = this.convertTime();

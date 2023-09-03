@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="loader"></div>
+    <div class="loader" :style="`width:${loaderWidth}%`"></div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default defineComponent({
   props: {
     loaderWidth: {
       type: String,
-      default: '1/2',
+      default: '35',
     },
   },
 });
@@ -20,7 +20,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .loader {
   height: 10px;
-  width: 45%;
+
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
