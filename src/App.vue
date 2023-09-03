@@ -1,10 +1,13 @@
-<template></template>
-<script setup lang="ts">
-
+<template>
+  <livestream-starting></livestream-starting>
+</template>
+<script lang="ts">
 import { defineComponent } from 'vue';
-
-export defineComponent({
+import LivestreamStarting from '@/components/LivestreamStarting.vue';
+export default defineComponent({
   name: 'App',
-
+  components: {
+    LivestreamStarting,
+  },
 });
 </script>
