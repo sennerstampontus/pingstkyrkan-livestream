@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import App from '@/App.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: App,
+    component: () => import('@/views/HomeView.vue'),
+  },
+  {
+    path: '/stream',
+    name: 'Stream',
+    component: () => import('@/views/StreamView.vue'),
   },
 ];
 
