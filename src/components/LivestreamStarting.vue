@@ -3,15 +3,15 @@
     <div>
       <div class="flex gap-5">
         <template v-if="!isTimeExpired">
-          <h1 class="mb-5 text-3xl" :style="`color:${getTextColorQuery}`">
+          <h1 class="mb-5 text-5xl" :style="`color:${getTextColorQuery}`">
             {{ getTextQuery }}
           </h1>
-          <p v-if="getTimeQuery" class="text-3xl" :style="`color:${getTimeColorQuery}`">
+          <p v-if="getTimeQuery" class="text-5xl" :style="`color:${getTimeColorQuery}`">
             <b>{{ countdown }}</b>
           </p>
         </template>
         <template v-else>
-          <h1 class="mb-5 text-3xl " :style="`color:${getTextColorQuery}`">
+          <h1 class="mb-5 text-5xl " :style="`color:${getTextColorQuery}`">
             Sändningen börjar strax
           </h1>
         </template>
