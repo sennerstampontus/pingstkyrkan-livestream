@@ -22,7 +22,7 @@ export default defineComponent({
   height: 15px;
 
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 
