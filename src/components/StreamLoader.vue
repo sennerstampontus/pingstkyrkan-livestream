@@ -19,10 +19,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .loader {
-  height: 10px;
+  height: 15px;
 
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
 }
 
